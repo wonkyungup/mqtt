@@ -1,0 +1,22 @@
+{
+  "name": "mqtt-docker",
+  "version": "1.0.0",
+  "description": "mqtt test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "docker-compose -f ./broker/serve.yml up",
+    "client": "nodemon ./client/index.js --exec babel-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.23.2",
+    "nodemon": "^3.0.1"
+  }
+}
